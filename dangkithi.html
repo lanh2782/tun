@@ -1,0 +1,43 @@
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Đăng kí thi</title>
+    <style>
+        form { width: 400px; border: 2px solid; padding: 5px; }
+        label { display: inline-block; width: 80px; margin-bottom: 5px; }
+        input, select { margin-bottom: 5px; }
+        fieldset { border: 2px solid; margin: 5px 0; }
+    </style>
+</head>
+<body>
+    <form>
+        <h2><b>Đăng kí môn thi tốt nghiệp</b></h2>
+        <fieldset>
+            <label>Họ và tên:</label> <input type="text"><br>
+            <label>CCCD:</label> <input type="text"><br>
+            <label>Ngày sinh:</label> <input type="date"><br>
+
+            <div>
+                <label><b>Giới tính:</b></label>
+                <input type="radio" name="gioitinh" value="Nam"> Nam
+                <input type="radio" name="gioitinh" value="Nữ"> Nữ
+            </div>
+
+            <div>
+                <label><b>Môn thi:</b></label>
+                <input type="checkbox" name="monthi" value="Toán"> Toán
+                <input type="checkbox" name="monthi" value="Văn"> Văn
+                <input type="checkbox" name="monthi" value="Ngoại ngữ"> Ngoại ngữ
+            </div>
+
+            <label>Tổ hợp:</label>
+            <select>
+                <option>Khoa học tự nhiên</option>
+                <option>Khoa học xã hội</option>
+            </select><br>
+
+            <button type="submit">Gửi thông tin</button>
+        </fieldset>
+    </form>
+</body>
+</html>
